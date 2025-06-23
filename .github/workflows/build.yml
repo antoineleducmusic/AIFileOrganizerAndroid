@@ -27,7 +27,7 @@ jobs:
       run: chmod +x ./gradlew && chmod -R a+r ./gradle/wrapper
 
     - name: Grant execute permission to gradlew
-      run: chmod +x ./gradlew
+      run: chmod +x ./gradlew && chmod +x ./gradle/wrapper/gradle-wrapper.jar
 
     - name: Build debug APK
       run: ./gradlew assembleDebug
