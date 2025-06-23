@@ -23,6 +23,9 @@ jobs:
         distribution: 'temurin'
         java-version: 17
 
+    - name: Ensure gradle-wrapper.jar is executable
+      run: chmod +x ./gradlew && chmod -R a+r ./gradle/wrapper
+
     - name: Grant execute permission to gradlew
       run: chmod +x ./gradlew
 
