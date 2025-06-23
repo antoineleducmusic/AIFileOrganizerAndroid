@@ -7,9 +7,8 @@ on:
 
 jobs:
   build:
-    environment:
-      node-version: 20
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
